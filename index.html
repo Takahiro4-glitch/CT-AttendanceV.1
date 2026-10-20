@@ -5,33 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>เช็คชื่อการเข้าเรียน - กลุ่มบริหารงานวิชาการ โรงเรียนจอมทอง</title>
-  <link rel="icon" type="image/png" href="https://img2.pic.in.th/pic/LOGOChomthong0be381c1c5760248.png">
-  <link rel="apple-touch-icon" href="https://img2.pic.in.th/pic/LOGOChomthong0be381c1c5760248.png">
+
+  <!-- favicon โลโก้โรงเรียนจอมทอง -->
+  <link rel="icon" type="image/png" href="https://i.ibb.co/7NjfX76K/LOGO-111.png">
+  <link rel="apple-touch-icon" href="https://i.ibb.co/7NjfX76K/LOGO-111.png">
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
     html, body {
-      margin: 0; padding: 0; width: 100%; height: 100%; height: 100dvh;
-      overflow: hidden; background-color: #0F2C59;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      background-color: #0F2C59;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       -webkit-overflow-scrolling: touch;
     }
     .embed-container {
-      position: fixed; inset: 0; top: 0; left: 0; right: 0; bottom: 0;
-      width: 100%; height: 100%; height: 100dvh; border: 0; overflow: hidden;
+      position: fixed;
+      inset: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      border: 0;
+      overflow: hidden;
     }
     .embed-frame {
-      width: 100%; height: 100%; border: 0; display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
       background-color: #F8FAFC;
     }
   </style>
 </head>
+
 <body>
   <div class="embed-container">
-    <!-- ฝัง Web app; การเข้าถึงยังขึ้นอยู่กับสิทธิ์ deployment และบัญชี Google -->
+    <!-- ใช้ iframe แทน object เพื่อรองรับเบราว์เซอร์บนมือถือ -->
+    <!-- ใช้ /macros/s/... เพื่อลดปัญหาหน้าบังคับล็อกอินโดเมน -->
     <iframe
       id="gasAppFrame"
       class="embed-frame"
-      src="https://script.google.com/a/macros/crru.ac.th/s/AKfycbyRPMkqkNtvM7P0F9f7qHFx6A7Ig0OrIkurobr2RfrmSr82q9vn7X5tLiph3CFRUvu3OQ/exec?embed=1"
+      src="https://script.google.com/macros/s/AKfycbzCD20G6IgJ4zxgiRvlAZIJDzE9aAlK3l4MCXIMILI__qJyNPn2xwsSZGBqVpIvttyqmw/exec?embed=1"
       title="เช็คชื่อการเข้าเรียน - กลุ่มบริหารงานวิชาการ โรงเรียนจอมทอง"
       allow="clipboard-read; clipboard-write; fullscreen"
       allowfullscreen>
